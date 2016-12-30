@@ -1,23 +1,27 @@
 package Calculator;
 
 public class Calculator {
-	public Calculator(){
-		
-	}
+	Double a,b;
+	String eq;
 	
+	public Calculator(Double a, Double b, String eq){
+		this.a = a;
+		this.b = b;
+		this.eq = eq;
+	}
 	public Double add(){
-		return null;
+		return (double) (a + b);
 	}
 	public Double subract(){
-		return null;
+		return (double) (a - b);
 	}
 	public Double multiply(){
-		return null;
+		return (double) (a * b);
 	}
 	public Double divide(){
-		return null;
+		return (double) (a/b);
 	}
 	public Double remainder(){
-		return null;
+		return (double) (a%b);
 	}
 }

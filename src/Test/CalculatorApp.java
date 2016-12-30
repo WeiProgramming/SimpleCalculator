@@ -4,23 +4,37 @@ import java.util.Scanner;
 import Calculator.*;
 
 public class CalculatorApp{
-	Float A,B;
-	String Eq;
-	Calculator calculator;
 	
 	public static void main(String[] args){
-		System.out.println("Welcome To Simple Calculator Please Choose Operand");
-		System.out.println("1) +");		
-		System.out.println("2) -");
-		System.out.println("3) *");
-		System.out.println("4) /");
-		System.out.println("5) %");
+		System.out.println("Welcome To Simple Calculator\n");
 		Scanner scanner = new Scanner(System.in);
-		String operand = scanner.nextLine();
 		
+		System.out.println("Please Enter First Number");
+		Double firstNum = scanner.nextDouble();
 		
-		calculator = new Calculator(A,B,Eq);
+		System.out.println("Please Enter Operand");
+		String operand = scanner.next();
+		
+		System.out.println("Please Enter Second Number");
+		Double secondNum = scanner.nextDouble();
 
+		Calculator calculator = new Calculator(firstNum, secondNum, operand);
 		
+		if(operand == "+"){
+//			calculator.add();
+			System.out.println("Your answer is " + calculator.add());
+		}
+		else if(operand == "-"){
+			calculator.subract();
+		}
+		else if(operand == "*"){
+			calculator.multiply();
+		}
+		else if (operand == "/"){
+			calculator.divide();
+		}
+		else if (operand == "%"){
+			calculator.remainder();
+		}
 	}
 }
