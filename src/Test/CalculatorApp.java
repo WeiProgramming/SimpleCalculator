@@ -5,8 +5,14 @@ import Calculator.*;
 
 public class CalculatorApp{
 	private static Double solution;
+	private static String add = "+";
+	private static String sub = "-";
+	private static String mult = "*";
+	private static String mod = "%";
+	private static String div = "/";
 	
 	public static void main(String[] args){
+		Calculator calculator = new Calculator();
 		System.out.println("Welcome To Simple Calculator\n");
 		Scanner scanner = new Scanner(System.in);
 		
@@ -15,15 +21,30 @@ public class CalculatorApp{
 		
 		System.out.println("Please Enter Operand");
 		String operand = scanner.next();
-		operand.toString();
 		
 		System.out.println("Please Enter Second Number");
 		Double secondNum = scanner.nextDouble();
 		scanner.close();
 
-		Calculator calculator = new Calculator();
-		calculator.solution(firstNum,secondNum,operand);
+//		solution = calculator.add(firstNum, secondNum);
 		
-//		System.out.println("first"+firstNum+"second"+secondNum+"operand"+operand+"sol"+solution);
+		if(operand == add){
+			calculator.add(firstNum, secondNum);
+		}
+		else if(operand == sub){
+			calculator.subract(firstNum, secondNum);
+		}
+		else if(operand == mult){
+			calculator.multiply(firstNum, secondNum);
+		}
+		else if (operand == div){
+			calculator.divide(firstNum, secondNum);
+		}
+		else if (operand == mod){
+			calculator.remainder(firstNum, secondNum);
+		}
+		else{
+			System.out.println("Invalid Please Re-Enter");
+		}
 	}
 }
