@@ -15,27 +15,27 @@ public class Calculator {
 	
 	public Double add(Double a, Double b){
 		solution = (double) (a + b);
-		System.out.println("The answer is: "+ solution);
+		System.out.println("The added answer is: "+ solution);
 		return solution;
 	}
 	public Double subract(Double a, Double b){
 		solution = (double) (a - b);
-		System.out.println("The answer is: "+ solution);
+		System.out.println("The subtracted answer is: "+ solution);
 		return solution;
 	}
 	public Double multiply(Double a, Double b){
 		solution = (double) (a * b);
-		System.out.println("The answer is: "+ solution);
+		System.out.println("The multiplied answer is: "+ solution);
 		return solution;
 	}
 	public Double divide(Double a, Double b){
 		solution = (double) (a/b);
-		System.out.println("The answer is: "+ solution);
+		System.out.println("The divided answer is: "+ solution);
 		return solution;
 	}
 	public Double remainder(Double a, Double b){
 		solution = (double) (a%b);
-		System.out.println("The answer is: "+ solution);
+		System.out.println("The remainder answer is: "+ solution);
 		return solution;
 	}
 //	public void solution(Double a, Double b,String operand){
