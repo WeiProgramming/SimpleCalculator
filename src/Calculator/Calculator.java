@@ -38,25 +38,24 @@ public class Calculator {
 		System.out.println("The remainder answer is: "+ solution);
 		return solution;
 	}
-//	public void solution(Double a, Double b,String operand){
-//		String eq = operand;
-//		if(eq == add){
-//			add(a, b);
-//		}
-//		else if(operand == sub){
-//			subract(a, b);
-//		}
-//		else if(operand == mult){
-//			multiply(a, b);
-//		}
-//		else if (operand == div){
-//			divide(a, b);
-//		}
-//		else if (operand == mod){
-//			remainder(a, b);
-//		}
-//		else{
-//			System.out.println("Invalid");
-//		}
-//	}
+	public void solution(Double a, Double b,String operand){
+		if(operand.equals(add)){
+			add(a, b);
+		}
+		else if(operand.equals(sub)){
+			subract(a, b);
+		}
+		else if(operand.equals(mult)){
+			multiply(a, b);
+		}
+		else if (operand.equals(div)){
+			divide(a, b);
+		}
+		else if (operand.equals(mod)){
+			remainder(a, b);
+		}
+		else{
+			System.out.println("Invalid");
+		}
+	}
 }
